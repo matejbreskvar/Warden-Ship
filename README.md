@@ -16,7 +16,7 @@ classify and connect paintings that already exist.
 [![Electron](https://img.shields.io/badge/Electron-desktop-47848F?logo=electron&logoColor=white)](https://www.electronjs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-### [**Visit the project site &rarr;**](https://mb37860.github.io/Warden-Ship/)
+### [**Visit the project site &rarr;**](https://matejbreskvar.github.io/Warden-Ship/)
 
 <img src="docs/images/deck.jpg" alt="The deck of The Warden at night" width="100%">
 
@@ -126,8 +126,8 @@ time.
 
 | | |
 |---|---|
-| <img src="docs/images/chest-room.jpg" alt="Chest room" width="100%"><br>**Chest room** — drop a ZIP archive into the chest to load a collection. | <img src="docs/images/hallway.jpg" alt="Hallway" width="100%"><br>**Hallway** — the hub the six instruments hang off. |
-| <img src="docs/images/island.jpg" alt="Island telescope" width="100%"><br>**Island** — the telescope that opens the Star Atlas. | <img src="docs/images/deck.jpg" alt="Deck" width="100%"><br>**Deck** — the sea of images the voyage starts on. |
+| <img src="docs/images/chest-room.jpg" alt="Chest room" width="100%"><br>**Chest room** — drop a ZIP archive into the chest to load a collection. | <img src="docs/images/hallway.jpg" alt="Hallway" width="100%"><br>**Hallway** — the chronology wall and the artifact close-up. |
+| <img src="docs/images/island.jpg" alt="Island telescope" width="100%"><br>**Island** — the telescope that opens the Star Atlas. | <img src="docs/images/deck.jpg" alt="Deck" width="100%"><br>**Deck** — the six instruments and the voyage. |
 
 </details>
 
@@ -195,7 +195,7 @@ and a MongoDB you can reach. The desktop build and CI both use Python 3.12 and
 Node 22; that is the combination this is tested on.
 
 ```bash
-git clone https://github.com/MB37860/Warden-Ship.git
+git clone https://github.com/matejbreskvar/Warden-Ship.git
 cd Warden-Ship
 cp .env.example .env          # defaults work out of the box
 ```
@@ -262,7 +262,7 @@ cd frontend && npm run build                      # production bundle
 ## Desktop app
 
 Prebuilt installers for **Windows and Linux** are on the
-[releases page](https://github.com/MB37860/Warden-Ship/releases). Each one
+[releases page](https://github.com/matejbreskvar/Warden-Ship/releases). Each one
 bundles a portable Python runtime and its own MongoDB — no system Python, no
 system database, nothing to install alongside it.
 
@@ -412,7 +412,7 @@ set, not from a model's estimate; the raw artifacts are committed in
 ## Credits
 
 - **Dataset** — [WikiArt](https://www.wikiart.org/), via the WikiArt parquet distribution, for training and evaluation.
-- **AGIQA-3K** — the AI-generated images drifting on the sea in the deck scene come from the AGIQA-3K dataset; they are the one place in the app where machine-made imagery appears, deliberately, as the thing the ship is a warden *against*.
+- **AGIQA-3K** — the AI-generated images drifting on the sea in the deck scene come from the AGIQA-3K dataset; they are the one place in the app where machine-made imagery appears, deliberately, as a foil to the human artworks.
 - **Models** — OpenAI CLIP, Google MediaPipe, RetinaFace, OpenCV, PyTorch, Hugging Face Transformers.
 - **3D assets** — the `.glb` models in `frontend/src/assets/models/` are third-party assets used under their respective terms.
 
